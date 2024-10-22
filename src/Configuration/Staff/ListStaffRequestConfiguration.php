@@ -23,11 +23,11 @@ class ListStaffRequestConfiguration implements ConfigurationInterface
     /**
      * @return TreeBuilder
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder():TreeBuilder
     {
-        $treeBuilder = new TreeBuilder();
+        $treeBuilder = new TreeBuilder('params');
 
-        $rootNode = $treeBuilder->root('params');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()

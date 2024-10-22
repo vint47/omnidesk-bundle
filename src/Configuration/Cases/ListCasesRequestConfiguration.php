@@ -35,11 +35,10 @@ class ListCasesRequestConfiguration implements ConfigurationInterface
     /**
      * @return TreeBuilder
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder():TreeBuilder
     {
-        $treeBuilder = new TreeBuilder();
-
-        $rootNode = $treeBuilder->root('params');
+        $treeBuilder = new TreeBuilder('params');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
