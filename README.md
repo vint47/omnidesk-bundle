@@ -13,7 +13,7 @@ Installation
 ### 1: Download
 
 ```bash
-$ composer require vragovr/omnidesk-bunle "dev-master"
+$ composer require vint47/omnidesk-bunle "dev-master"
 ```
 
 ### 2: Enable

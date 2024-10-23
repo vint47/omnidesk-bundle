@@ -179,7 +179,7 @@ class RequestService
      */
     protected function getUrl($url)
     {
-        return sprintf('https://%s.omnidesk.ru/api/%s.json', $this->config['domain'], $url);
+        return sprintf('https://%s/api/%s.json', $this->config['domain'], $url);
     }
 
     /**
