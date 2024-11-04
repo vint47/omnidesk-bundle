@@ -20,7 +20,8 @@ class UserDataTransformer implements DataTransformerInterface
         $model
             ->setId($value['user_id'])
             ->setType($value['type'])
-            ->setEmail($value['email'] ?? null)
+            ->setEmail($value['user_email'] ?? null)
+            ->setPhone($value['user_phone'] ?? null)
             ->setLanguageId($value['language_id'])
             ->setFullName($value['user_full_name'])
             ->setCompanyName($value['company_name'])

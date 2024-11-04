@@ -23,6 +23,11 @@ class User
     private $email;
 
     /**
+     * @var string
+     */
+    private $phone;
+
+    /**
      * @var int
      */
     private $languageId;
@@ -135,6 +140,25 @@ class User
     public function setEmail($email)
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param string $phone
+     * @return $this
+     */
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
 
         return $this;
     }
