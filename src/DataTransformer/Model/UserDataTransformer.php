@@ -24,6 +24,7 @@ class UserDataTransformer implements DataTransformerInterface
             ->setPhone($value['user_phone'] ?? null)
             ->setLanguageId($value['language_id'])
             ->setFullName($value['user_full_name'])
+            ->setScreenName($value['user_screen_name'])
             ->setCompanyName($value['company_name'])
             ->setCompanyPosition($value['company_position'])
             ->setThumbnail($value['thumbnail'])

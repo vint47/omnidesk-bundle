@@ -40,6 +40,11 @@ class User
     /**
      * @var string
      */
+    private $screenName;
+
+    /**
+     * @var string
+     */
     private $companyName;
 
     /**
@@ -197,6 +202,25 @@ class User
     public function setFullName($fullName)
     {
         $this->fullName = $fullName;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getScreenName()
+    {
+        return $this->screenName;
+    }
+
+    /**
+     * @param string $screenName
+     * @return $this
+     */
+    public function setScreenName($screenName)
+    {
+        $this->screenName = $screenName;
 
         return $this;
     }
